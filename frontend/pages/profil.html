@@ -1,0 +1,144 @@
+      <!-- Page: Profil (Diferensiasi Admin & Pasien) -->
+      <section class="page" id="page-profil">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow" id="profile-eyebrow">PENGATURAN AKUN</p>
+            <h1 id="profile-title">Profil Pengguna</h1>
+            <p class="muted" id="profile-desc">Informasi akun dan data pribadi.</p>
+          </div>
+        </div>
+
+        <div class="profile-layout">
+    <article class="panel profile-card">
+        <div class="profile-cover" id="profile-cover"></div>
+
+        <div class="profile-avatar" id="profile-avatar">A</div>
+
+        <h2 id="profile-heading-name">Pengguna</h2>
+        <p class="muted" id="profile-status-preview">Status</p>
+
+        <span class="pill" id="profile-pill-badge">● Akun aktif</span>
+
+        <div class="profile-divider"></div>
+
+        <div class="profile-detail">
+            <span>✉</span>
+            <div>
+                <small>Email</small>
+                <strong id="profile-email-preview">-</strong>
+            </div>
+        </div>
+
+        <div id="profile-role-details"></div>
+    </article>
+
+    <article class="panel profile-form-panel">
+        <div class="panel-heading">
+            <div>
+                <h2 id="profile-form-heading">Informasi Pribadi</h2>
+                <p class="muted" id="profile-form-desc">
+                    Ubah informasi profil di bawah ini.
+                </p>
+            </div>
+        </div>
+
+        <form id="profile-form" class="profile-form">
+
+            <div class="form-row">
+                <div>
+                    <label for="profile-name" id="profile-label-name">Nama Lengkap</label>
+                    <input
+                        id="profile-name"
+                        type="text"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label for="profile-email">Email</label>
+                    <input
+                        id="profile-email"
+                        type="email"
+                        required
+                    />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div id="profile-group-status">
+                    <label for="profile-status">Status Pengguna</label>
+                    <select id="profile-status">
+                        <option value="mahasiswa">Mahasiswa</option>
+                        <option value="dosen">Dosen</option>
+                        <option value="tenaga teknis">Tenaga Teknis</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="profile-nim">NIM / Identitas</label>
+                    <input id="profile-nim" type="text" placeholder="Masukkan NIM/NIP" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="profile-prodi">Program Studi</label>
+                    <input id="profile-prodi" type="text" placeholder="Contoh: D3 Manajemen Informatika" />
+                </div>
+                <div>
+                    <label for="profile-phone" id="profile-label-phone">Nomor HP</label>
+                    <input id="profile-phone" type="tel" placeholder="08xxxxxxxxxx" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div id="profile-group-age">
+                    <label for="profile-age">Umur (Tahun)</label>
+                    <input
+                        id="profile-age"
+                        type="number"
+                        min="1"
+                        max="120"
+                        placeholder="Contoh: 21"
+                    />
+                </div>
+
+                <div class="profile-photo-group">
+                    <label for="profile-photo">Foto Profil</label>
+                    <div class="profile-photo-control">
+                        <input
+                            id="profile-photo"
+                            type="file"
+                            accept="image/*"
+                        />
+                        <button type="button" class="btn outline profile-photo-btn-remove" id="profile-photo-remove-btn" title="Hapus foto profil">Hapus</button>
+                    </div>
+
+                    <small class="profile-hint">
+                        Format JPG, PNG, atau WEBP. Maksimal 2 MB.
+                    </small>
+                </div>
+            </div>
+
+            <div>
+                <label for="profile-bio" id="profile-label-bio">About Me</label>
+                <textarea
+                    id="profile-bio"
+                    rows="4"
+                    placeholder="Ceritakan sedikit tentang diri kamu..."
+                ></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn outline">
+                    Batal
+                </button>
+
+                <button type="submit" class="btn primary">
+                    Simpan Perubahan
+                </button>
+            </div>
+
+        </form>
+    </article>
+</div>
+      </section>

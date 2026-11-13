@@ -1,0 +1,53 @@
+<!-- Page: Home (Patient Dashboard) -->
+<section class="page active" id="page-home">
+  <!-- Patient Home Dashboard -->
+  <div id="patient-home-dashboard">
+    <div class="patient-home-welcome">
+      <div>
+        <p class="eyebrow">PORTAL LAYANAN KLINIK POLINELA</p>
+        <h1>Selamat Datang, <span id="patient-home-name">Pengguna</span>!</h1>
+        <p>Akses informasi dan layanan kesehatan Klinik Polinela dengan mudah.</p>
+        <div class="patient-home-meta">
+          <div><small>Nama Lengkap</small><strong id="patient-home-full-name">Belum tersedia</strong></div>
+          <div><small>NPM / Identitas</small><strong id="patient-home-npm">-</strong></div>
+          <div><small>Status / Prodi</small><strong id="patient-home-study">-</strong></div>
+        </div>
+      </div>
+      <div class="patient-home-art" aria-hidden="true">＋</div>
+    </div>
+
+    <div class="patient-home-history">
+      <article class="panel patient-home-card">
+        <div class="patient-home-card-head">
+          <div><span class="patient-home-icon">☷</span><h2>Riwayat Antrean</h2></div>
+          <strong id="patient-home-queue-total">0</strong>
+        </div>
+        <div id="patient-home-queue"></div>
+        <button class="btn outline full" data-goto="pasien">Lihat Riwayat <span>→</span></button>
+      </article>
+    </div>
+
+    <div class="patient-home-section">
+      <div class="panel-heading">
+        <div><p class="eyebrow">LAYANAN KLINIK</p><h2>Jadwal Dokter</h2></div>
+        <button class="text-btn" data-goto="jadwal">Lihat Semua Jadwal →</button>
+      </div>
+      <div id="patient-home-schedules" class="patient-home-schedule-grid"></div>
+    </div>
+
+    <div class="patient-home-section">
+      <div class="panel-heading">
+        <div><p class="eyebrow">MUDAH DIAKSES</p><h2>Akses Cepat</h2></div>
+      </div>
+      <div class="patient-home-shortcuts">
+        <button data-goto="pasien"><span>☷</span><strong>Ambil Antrean</strong><small>Daftar kunjungan baru</small></button>
+        <button data-goto="jadwal"><span>◷</span><strong>Jadwal Dokter</strong><small>Lihat jadwal praktik</small></button>
+        <button data-goto="medical-records"><span>▤</span><strong>Rekam Medis</strong><small>Lihat riwayat kunjungan</small></button>
+        <button data-goto="lokasi"><span>⌖</span><strong>Lokasi Klinik</strong><small>Alamat dan kontak klinik</small></button>
+        <button data-goto="profil"><span>♙</span><strong>Profil Saya</strong><small>Lihat &amp; edit profil</small></button>
+      </div>
+    </div>
+
+    <div class="footer-note">© 2026 Klinik Polinela · Portal Layanan Kesehatan Civitas Akademik</div>
+  </div>
+</section>
